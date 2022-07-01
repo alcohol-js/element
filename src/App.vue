@@ -63,6 +63,59 @@
       <el-col :span="6" :push="6"><div class="grid-content bg-purple"></div></el-col>
       <el-col :span="6" :pull="6"><div class="grid-content bg-purple"></div></el-col>
     </el-row>
+
+    <h2>弹性盒</h2>
+    <el-row type="flex"   align="top" class="row-bg">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row type="flex" class="row-bg" justify="center">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row type="flex" class="row-bg" justify="end">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row type="flex" class="row-bg" justify="space-between">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+    <el-row type="flex" class="row-bg" justify="space-around">
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple-light"></div></el-col>
+      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+    </el-row>
+
+    <h2>响应式布局</h2>
+    <el-row :gutter="10">
+      <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+        <div class="grid-content bg-purple"></div>
+      </el-col>
+      <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11">
+        <div class="grid-content bg-purple-light"></div>
+      </el-col>
+      <el-col :xs="4" :sm="6" :md="8" :lg="9" :xl="11">
+        <div class="grid-content bg-purple"></div>
+      </el-col>
+      <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+        <div class="grid-content bg-purple-light"></div>
+      </el-col>
+    </el-row>
+
+    <h2>断点隐藏类</h2>
+    <el-row>
+      <el-col class="hidden-xs-only" :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+        <div class="grid-content bg-purple"></div>
+      </el-col>
+      <el-col :xs="8" :sm="6" :md="4" :lg="3" :xl="1">
+        <div class="grid-content bg-purple-light"></div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
